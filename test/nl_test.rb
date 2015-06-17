@@ -11,6 +11,15 @@ class TestEnglishInflections < Minitest::Test
     assert_equal 'dagen', 'dag'.pluralize(:nl)
     assert_equal 'dag', 'dagen'.singularize(:nl)
 
+    assert_equal 'weekdagen', 'weekdag'.pluralize(:nl)
+    assert_equal 'weekdag', 'weekdagen'.singularize(:nl)
+
+    assert_equal 'daken', 'dak'.pluralize(:nl)
+    assert_equal 'dak', 'daken'.singularize(:nl)
+
+    assert_equal 'paden', 'pad'.pluralize(:nl)
+    assert_equal 'pad', 'paden'.singularize(:nl)
+
     assert_equal 'testen', 'test'.pluralize(:nl)
     assert_equal 'test', 'testen'.singularize(:nl)
 
@@ -19,6 +28,12 @@ class TestEnglishInflections < Minitest::Test
 
     assert_equal 'stieren', 'stier'.pluralize(:nl)
     assert_equal 'stier', 'stieren'.singularize(:nl)
+
+    assert_equal 'vlaaien', 'vlaai'.pluralize(:nl)
+    assert_equal 'vlaai', 'vlaaien'.singularize(:nl)
+
+    assert_equal 'koeien', 'koe'.pluralize(:nl)
+    assert_equal 'koe', 'koeien'.singularize(:nl)
   end
 
   def test_vowel_s_apostrophe_rules
@@ -124,6 +139,9 @@ class TestEnglishInflections < Minitest::Test
     assert_equal 'palen', 'paal'.pluralize(:nl)
     assert_equal 'paal', 'palen'.singularize(:nl)
 
+    assert_equal 'walen', 'waal'.pluralize(:nl)
+    assert_equal 'waal', 'walen'.singularize(:nl)
+
     assert_equal 'tuinpalen', 'tuinpaal'.pluralize(:nl)
     assert_equal 'tuinpaal', 'tuinpalen'.singularize(:nl)
 
@@ -141,6 +159,10 @@ class TestEnglishInflections < Minitest::Test
 
     assert_equal 'groentemannen', 'groenteman'.pluralize(:nl)
     assert_equal 'groenteman', 'groentemannen'.singularize(:nl)
+
+    assert_equal 'vakmannen', 'vakman'.pluralize(:nl)
+    assert_equal 'vakman', 'vakmannen'.singularize(:nl)
+    assert_equal 'vakman', 'vaklui'.singularize(:nl)
   end
 
   def test_latin_exceptions
